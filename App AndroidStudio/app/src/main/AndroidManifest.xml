@@ -12,15 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PSTG1"
         tools:targetApi="31">
+
+        <!-- Registro de MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
 
+        <!-- Registro de TempyhumedadActivity -->
+        <activity
+            android:name=".TempyhumedadActivity"
+            android:exported="true" />
+
+        <!-- Registro de ConsumoElecActivity -->
+        <activity
+            android:name=".ConsumoElecActivity"
+            android:exported="true" />
+
+    </application>
 </manifest>
