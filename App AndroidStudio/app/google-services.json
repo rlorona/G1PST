@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "287439498389",
+    "project_id": "pstg1-59b70",
+    "storage_bucket": "pstg1-59b70.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287439498389:android:4191cce4a2181b77f4bf9c",
+        "android_client_info": {
+          "package_name": "com.example.pstg1.ConsumoElecActivity"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArYMAFyZbPFQkKUU7vEW2235_2eY9WE-Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
