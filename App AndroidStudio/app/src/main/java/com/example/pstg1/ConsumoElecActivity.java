@@ -1,9 +1,11 @@
 package com.example.pstg1;
 
+import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.util.Log;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,6 +27,7 @@ public class ConsumoElecActivity extends AppCompatActivity {
     private final String[] codigosRegletas = {"4106", "4832", "42F6", "4E32", "53B3", "597C"};
     private DatabaseReference databaseRef;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,12 @@ public class ConsumoElecActivity extends AppCompatActivity {
 
         databaseRef = FirebaseDatabase.getInstance().getReference("consumos/-OGqD9uX1oot7n0eaqXW");
         cargarDatosFirebase();
+
+        Button btnRegresar = findViewById(R.id.btnRegresar);
+        btnRegresar.setOnClickListener(v -> {
+            Intent intent = new Intent(ConsumoElecActivity.this, MainActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void cargarDatosFirebase() {
