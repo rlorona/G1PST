@@ -1,56 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:orientation="vertical"
-android:padding="16dp"
-android:gravity="center_horizontal">
-
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Temperatura y Humedad"
-    android:textAlignment="center"
-    android:textColor="#3F51B5"
-    android:textSize="24sp"
-    android:textStyle="bold" />
-
-<TextView
-    android:id="@+id/textView2"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="42dp"
-    android:text="La temperatura actual es:"
-    android:textSize="20sp" />
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F7F7F7">
 
-<EditText
-    android:id="@+id/edt_Temp"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:ems="10"
-    android:inputType="text" />
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Temperatura y Humedad"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-bold"
+        android:gravity="center"
+        android:textColor="#3E4A59"
+        android:layout_marginBottom="16dp" />
 
-<TextView
-    android:id="@+id/textView3"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:paddingTop="20dp"
-    android:text="El porcentaje de humedad actual es:"
-    android:textSize="20sp" />
+    <!-- Temperatura actual -->
+    <TextView
+        android:id="@+id/temperature_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La temperatura actual es:"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#3E4A59"
+        android:layout_marginBottom="8dp" />
 
-<EditText
-    android:id="@+id/edt_Humedad"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:ems="10"
-    android:inputType="text" />
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:background="@android:color/transparent"
+        android:textColor="#FF5722"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
 
-<ImageView
-    android:id="@+id/imageView2"
-    android:layout_width="match_parent"
-    android:layout_height="403dp"
-    android:padding="20dp"
-    tools:srcCompat="@tools:sample/avatars" />
+    <!-- Humedad actual -->
+    <TextView
+        android:id="@+id/humidity_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="El porcentaje de humedad actual es:"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#3E4A59"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:background="@android:color/transparent"
+        android:textColor="#2196F3"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Marco de la gráfica -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/graph_background"
+        android:elevation="4dp"
+        android:clipToPadding="false">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/line_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_regresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
 
 </LinearLayout>
