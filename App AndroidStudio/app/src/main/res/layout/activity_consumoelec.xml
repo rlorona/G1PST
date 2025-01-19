@@ -20,8 +20,6 @@
             android:textStyle="bold"
             android:paddingBottom="20dp" />
 
-        <!-- Aquí van las 6 regletas -->
-
         <!-- REGLETA 1 -->
         <TextView
             android:id="@+id/tvRegleta1"
@@ -29,7 +27,8 @@
             android:layout_height="wrap_content"
             android:text="Regleta 1: "
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
         <TextView
             android:id="@+id/tvConsumoRegleta1"
@@ -61,7 +60,8 @@
             android:layout_height="wrap_content"
             android:text="Regleta 2: "
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
         <TextView
             android:id="@+id/tvConsumoRegleta2"
@@ -86,14 +86,15 @@
             android:textSize="16sp"
             android:textColor="#FF0000" />
 
-        <!-- REGLETA 2 -->
+        <!-- REGLETA 3 -->
         <TextView
             android:id="@+id/tvRegleta3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regleta 2: "
+            android:text="Regleta 3: "
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
         <TextView
             android:id="@+id/tvConsumoRegleta3"
@@ -123,9 +124,10 @@
             android:id="@+id/tvRegleta4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regleta 2: "
+            android:text="Regleta 4: "
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
         <TextView
             android:id="@+id/tvConsumoRegleta4"
@@ -155,9 +157,10 @@
             android:id="@+id/tvRegleta5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Regleta 2: "
+            android:text="Regleta 5: "
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
         <TextView
             android:id="@+id/tvConsumoRegleta5"
@@ -189,7 +192,8 @@
             android:layout_height="wrap_content"
             android:text="Regleta 6: "
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
         <TextView
             android:id="@+id/tvConsumoRegleta6"
@@ -202,10 +206,7 @@
             android:id="@+id/tvComputadora6_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Computadora 1: OFF"
-            android:textSize="16sp"
-            android:textColor="#FF0000" />
-
+            android:text="Computadora 1: OFF"/>
         <TextView
             android:id="@+id/tvComputadora6_2"
             android:layout_width="wrap_content"
@@ -213,8 +214,6 @@
             android:text="Computadora 2: OFF"
             android:textSize="16sp"
             android:textColor="#FF0000" />
-
-        <!-- Puedes seguir agregando las demás regletas de la misma forma -->
 
     </LinearLayout>
 </ScrollView>
