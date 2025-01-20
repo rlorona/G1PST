@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="#F7F7F7">
+    android:background="#333333">
 
     <!-- Título principal -->
     <TextView
@@ -17,7 +17,7 @@
         android:textStyle="bold"
         android:fontFamily="sans-serif-bold"
         android:gravity="center"
-        android:textColor="#3E4A59"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="16dp" />
 
     <!-- Temperatura actual -->
@@ -28,7 +28,7 @@
         android:text="La temperatura actual es:"
         android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
-        android:textColor="#3E4A59"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="8dp" />
 
     <EditText
@@ -51,7 +51,7 @@
         android:text="El porcentaje de humedad actual es:"
         android:textSize="16sp"
         android:fontFamily="sans-serif-medium"
-        android:textColor="#3E4A59"
+        android:textColor="#FFFFFF"
         android:layout_marginBottom="8dp" />
 
     <EditText
@@ -90,6 +90,7 @@
         android:text="Regresar"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:backgroundTint="#009688"
         android:layout_marginBottom="16dp" />
 
 </LinearLayout>

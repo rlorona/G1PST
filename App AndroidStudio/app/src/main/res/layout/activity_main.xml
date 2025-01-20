@@ -5,19 +5,22 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#333333"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="403dp"
+        android:layout_height="726dp"
+        android:gravity="center"
         android:orientation="vertical"
         android:padding="25dp"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.713">
 
         <ImageView
             android:id="@+id/imageView"
@@ -37,19 +40,27 @@
 
         <Button
             android:id="@+id/BotonTemp"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:text="Temperatura y humedad"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
             android:layout_marginTop="16dp"
-            android:textAlignment="center" />
+            android:backgroundTint="#009688"
+            android:text="Temperatura y humedad"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
 
         <Button
             android:id="@+id/BotonConsumo"
-            android:layout_width="240dp"
-            android:layout_height="wrap_content"
-            android:text="Consumo Eléctrico"
+            android:layout_width="270dp"
+            android:layout_height="70dp"
             android:layout_marginTop="16dp"
-            android:textAlignment="center" />
+            android:backgroundTint="#009688"
+            android:text="Consumo Eléctrico"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

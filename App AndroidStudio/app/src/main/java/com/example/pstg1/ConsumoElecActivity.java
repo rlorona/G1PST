@@ -24,7 +24,7 @@ public class ConsumoElecActivity extends AppCompatActivity {
     private TextView[] tvRegleta = new TextView[6];
     private TextView[] tvConsumoRegleta = new TextView[6];
     private TextView[][] tvComputadora = new TextView[6][2];
-    private final String[] codigosRegletas = {"4106", "4832", "42F6", "4E32", "53B3", "597C"};
+    private final String[] codigosRegletas = {"4106", "4832", "42F6", "4E32", "CC0F","597C"};
     private DatabaseReference databaseRef;
 
 
@@ -74,7 +74,7 @@ public class ConsumoElecActivity extends AppCompatActivity {
 
                                     if (consumo != null) {
                                         consumoTotal += consumo;
-                                        String estado = (consumo > 15) ? "ON" : "OFF";
+                                        String estado = (consumo > 10) ? "ON" : "OFF";
 
                                         if (index < 2) {
                                             tvComputadora[i][index].setText(nombreEnchufe + ": " + estado);

@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#333333">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +17,7 @@
             android:layout_height="wrap_content"
             android:text="Consumo Eléctrico"
             android:textSize="24sp"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:paddingBottom="20dp" />
 
@@ -27,6 +28,7 @@
             android:layout_height="wrap_content"
             android:text="Regleta 1: "
             android:textSize="18sp"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
@@ -35,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Consumo Total: 0W"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <TextView
@@ -59,12 +62,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Regleta 2: "
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
             android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
         <TextView
             android:id="@+id/tvConsumoRegleta2"
+            android:textColor="#FFFFFF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Consumo Total: 0W"
@@ -93,6 +98,7 @@
             android:layout_height="wrap_content"
             android:text="Regleta 3: "
             android:textSize="18sp"
+            android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:paddingTop="20dp" /> <!-- Espacio agregado -->
 
@@ -100,6 +106,7 @@
             android:id="@+id/tvConsumoRegleta3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
             android:text="Consumo Total: 0W"
             android:textSize="16sp" />
 
@@ -125,6 +132,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Regleta 4: "
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
             android:paddingTop="20dp" /> <!-- Espacio agregado -->
@@ -133,6 +141,7 @@
             android:id="@+id/tvConsumoRegleta4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
             android:text="Consumo Total: 0W"
             android:textSize="16sp" />
 
@@ -158,6 +167,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Regleta 5: "
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
             android:paddingTop="20dp" /> <!-- Espacio agregado -->
@@ -167,6 +177,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Consumo Total: 0W"
+            android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
         <TextView
@@ -191,6 +202,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Regleta 6: "
+            android:textColor="#FFFFFF"
             android:textSize="18sp"
             android:textStyle="bold"
             android:paddingTop="20dp" /> <!-- Espacio agregado -->
@@ -199,6 +211,7 @@
             android:id="@+id/tvConsumoRegleta6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
             android:text="Consumo Total: 0W"
             android:textSize="16sp" />
 
@@ -206,7 +219,9 @@
             android:id="@+id/tvComputadora6_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Computadora 1: OFF"/>
+            android:text="Computadora 1: OFF"
+            android:textSize="16sp"
+            android:textColor="#FF0000" />
         <TextView
             android:id="@+id/tvComputadora6_2"
             android:layout_width="wrap_content"
@@ -216,12 +231,16 @@
             android:textColor="#FF0000" />
         <Button
             android:id="@+id/btnRegresar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
             android:text="Regresar"
-            android:textSize="18sp"
-            android:layout_marginTop="20dp"
-            android:padding="12dp" />
+            android:textSize="20sp"
+            android:layout_marginTop="40dp"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#009688"
+            android:textAlignment="center" />
+
 
     </LinearLayout>
 </ScrollView>
